@@ -36,7 +36,7 @@ app.use(express.json());
 app.use(express.urlencoded({extended : true }));
 
 app.use('/admin',adminRouter);
-//app.use('/webhooks' , clerkWebhooks);
+//app.use('/webhooks' , clerkWebhooks);  hook
 app.use("/seller",SellerRoutes);
 
 app.use("/product",productrouter);
